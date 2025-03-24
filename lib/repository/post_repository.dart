@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:vibe_call/core/common/widgets/common_snackbars/common_snackbar.dart';
-import 'package:vibe_call/core/repository/custom_repository.dart';
-import 'package:vibe_call/core/services/post_request_service.dart';
+import 'package:vibe_call/repository/custom_repository.dart';
+import 'package:vibe_call/services/post_request_service.dart';
 
 class PostRepository extends CustomRepository {
   @override

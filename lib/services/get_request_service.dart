@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:get/get_connect/connect.dart';
-import 'package:vibe_call/core/network/api_client.dart';
-import 'package:vibe_call/core/network/network_utils.dart';
+import 'package:vibe_call/network/api_client.dart';
+import 'package:vibe_call/network/network_utils.dart';
 
 class GetRequestService {
   final ApiClient _apiClient;
@@ -12,9 +12,6 @@ class GetRequestService {
       final headers = await _apiClient.getHeaders(); // Fetch headers
       debugPrint("GET Request to: $endpoint with headers: $headers");
       final response = await _apiClient.client.get(endpoint); // Use `client`
-      debugPrint("${response.statusCode}");
-      debugPrint('statuscode');
-      debugPrint("${response.body}");
       if (response.statusCode == 200) {
         return response;
       } else {

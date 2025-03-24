@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import 'package:vibe_call/core/network/api_client.dart';
-import 'package:vibe_call/core/services/delete_request_service.dart';
-import 'package:vibe_call/core/services/get_request_service.dart';
-import 'package:vibe_call/core/services/post_request_service.dart';
-import 'package:vibe_call/core/services/put_request_service.dart';
+import 'package:vibe_call/network/api_client.dart';
+import 'package:vibe_call/services/delete_request_service.dart';
+import 'package:vibe_call/services/get_request_service.dart';
+import 'package:vibe_call/services/post_request_service.dart';
+import 'package:vibe_call/services/put_request_service.dart';
 
 class SetupDependencies {
   static void init() {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:vibe_call/core/network/setup_dependencies.dart';
+import 'package:vibe_call/network/setup_dependencies.dart';
 import 'package:vibe_call/routes/app_routes.dart';
 
 void main() {

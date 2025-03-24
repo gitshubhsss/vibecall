@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
-import 'package:vibe_call/core/repository/get_request_repository.dart';
+import 'package:vibe_call/repository/get_request_repository.dart';
 import 'package:vibe_call/features/auth/data/models/user_model.dart';
 
 class HomePageController extends GetxController {

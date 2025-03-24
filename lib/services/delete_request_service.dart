@@ -1,22 +1,22 @@
 import 'dart:io';
 
 import 'package:get/get_connect/connect.dart';
-import 'package:vibe_call/core/network/api_client.dart';
-import 'package:vibe_call/core/network/network_utils.dart';
+import 'package:vibe_call/network/api_client.dart';
+import 'package:vibe_call/network/network_utils.dart';
 
-class PutRequestService {
+class DeleteRequestService {
   final ApiClient _apiClient;
-  PutRequestService(this._apiClient); //Dependacy injection
-  Future<Response> putRequest({
+  DeleteRequestService(this._apiClient);
+  Future<Response> deleteRequest({
     required String endpoint,
     required Map<String, dynamic> requestJson,
   }) async {
-    final headers = await _apiClient.getHeaders();
     try {
-      final response = await _apiClient.client.put(
+      final headers = await _apiClient.getHeaders();
+      final response = await _apiClient.client.delete(
         endpoint,
-        requestJson,
         headers: headers,
+        query: requestJson,
       );
       if (response.statusCode == 200) {
         return response;
